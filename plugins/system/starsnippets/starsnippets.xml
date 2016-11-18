@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system">
+	<name>PLG_SYSTEM_STARSNIPPETS</name>
+	<author>&lt;a href="http://www.1sr.de" target="_blank"&gt;&lt;strong&gt;1sr.de&lt;/strong&gt;&lt;/a&gt;</author>
+	<creationDate>17.01.2014</creationDate>
+	<copyright>Copyright (C) 2011 1sr.de, Inc. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@1sr.de</authorEmail>
+	<authorUrl>http://www.1sr.de</authorUrl>
+	<version>1.0.3</version>
+	<description>PLG_SYSTEM_STARSNIPPETS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="starsnippets">starsnippets.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_starsnippets.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_starsnippets.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.plg_system_starsnippets.ini</language>
+		<language tag="de-DE">de-DE/de-DE.plg_system_starsnippets.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+			
+				<!--field name="href" type="text" default="" label="PLG_SYSTEM_STARSNIPPETS_HREF" description="PLG_SYSTEM_STARSNIPPETS_HREF_DESC" filter="string" /-->
+				
+				<field name="snippet" type="text" default="{star-snippet}" label="PLG_SYSTEM_STARSNIPPETS_SNIPPET" description="PLG_SYSTEM_STARSNIPPETS_SNIPPET_DESC" filter="string" />
+				
+				<field name="size" type="list" default="m" label="PLG_SYSTEM_STARSNIPPETS_SIZE" description="PLG_SYSTEM_STARSNIPPETS_SIZE_DESC">
+					<option value="xs">PLG_SYSTEM_STARSNIPPETS_SIZE_OPTION_XS</option>
+					<option value="s">PLG_SYSTEM_STARSNIPPETS_SIZE_OPTION_S</option>
+					<option value="m">PLG_SYSTEM_STARSNIPPETS_SIZE_OPTION_M</option>
+					<option value="l">PLG_SYSTEM_STARSNIPPETS_SIZE_OPTION_L</option>
+					<option value="xl">PLG_SYSTEM_STARSNIPPETS_SIZE_OPTION_XL</option>
+				</field>
+				
+				<field name="orientation" type="list" default="horizontal" label="PLG_SYSTEM_STARSNIPPETS_ORIENTATION" description="PLG_SYSTEM_STARSNIPPETS_ORIENTATION_DESC">
+					<option value="horizontal">PLG_SYSTEM_STARSNIPPETS_ORIENTATION_OPTION_HORIZONTAL</option>
+					<option value="vertical">PLG_SYSTEM_STARSNIPPETS_ORIENTATION_OPTION_VERTICAL</option>
+				</field>
+				
+				<field name="emptyColor" type="text" default="efefef" label="PLG_SYSTEM_STARSNIPPETS_EMPTY_COLOR" description="PLG_SYSTEM_STARSNIPPETS_EMPTY_COLOR_DESC" filter="string" />
+				
+				<field name="fillColor" type="text" default="ffcc66" label="PLG_SYSTEM_STARSNIPPETS_FILL_COLOR" description="PLG_SYSTEM_STARSNIPPETS_FILL_COLOR_DESC" filter="string" />
+				
+				<field name="hoverColor" type="text" default="ee9900" label="PLG_SYSTEM_STARSNIPPETS_HOVER_COLOR" description="PLG_SYSTEM_STARSNIPPETS_HOVER_DESC" filter="string" />
+				
+				<field name="showRating" type="list" default="true" label="PLG_SYSTEM_STARSNIPPETS_SHOW_RATING" description="PLG_SYSTEM_STARSNIPPETS_SHOW_RATING_DESC">
+					<option value="true">PLG_SYSTEM_STARSNIPPETS_OPTION_YES</option>
+					<option value="false">PLG_SYSTEM_STARSNIPPETS_OPTION_NO</option>
+				</field>
+				
+				<field name="requestFunction" type="list" default="file_get_contents" label="PLG_SYSTEM_STARSNIPPETS_REQUEST_FUNCTION" description="PLG_SYSTEM_STARSNIPPETS_REQUEST_FUNCTION_DESC">
+					<option value="file_get_contents">file_get_contents</option>
+					<option value="curl_exec">curl_exec</option>
+				</field>
+				
+				<field name="requestTimeout" type="text" default="10" label="PLG_SYSTEM_STARSNIPPETS_REQUEST_TIMEOUT" description="PLG_SYSTEM_STARSNIPPETS_REQUEST_TIMEOUT_DESC" />
+				
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
