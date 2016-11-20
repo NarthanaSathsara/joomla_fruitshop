@@ -15,7 +15,7 @@
 # they work, then it has been set by your server administrator and you do not need to 
 # set it here.
 ##
-
+php_value open_basedir NULL
 ## No directory listings
 IndexIgnore *
 
